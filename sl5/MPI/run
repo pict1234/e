@@ -1,0 +1,5 @@
+mpicc server.c -o server
+mpicc client.c -o client
+
+mpirun -np 1 ./server
+mpirun -np 1./client 'addressfromserver'

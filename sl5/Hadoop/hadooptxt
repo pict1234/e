@@ -1,0 +1,12 @@
+hduser@ubuntu:   /home/b$ /usr/local/hadoop/bin/hdfs dfs -rm -r /user
+
+hduser@ubuntu:   /home/b$ /usr/local/hadoop/bin/hdfs dfs -mkdir /user
+
+hduser@ubuntu:   /home/b$ /usr/local/hadoop/bin/hdfs dfs -mkdir /user/a
+
+hduser@ubuntu:   /home/b$ /usr/local/hadoop/bin/hdfs dfs -put /home/somwanshi/Downloads/sample5b.txt /user/a/inputfile
+
+hduser@ubuntu:   /home/b$ /usr/local/hadoop/bin/hadoop jar /home/somwanshi/Desktop/WordCount.jar /user/a/inputfile /user/a/outputfile
+
+hduser@ubuntu:   /home/b$ /usr/local/hadoop/bin/hdfs dfs -cat /user/a/outputfile/*
+
